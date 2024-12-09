@@ -1,0 +1,74 @@
+.stats {
+    @include image-bg('../images/bg_stat.webp');
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        height: fit-content;
+
+        &:nth-child(1) {
+            margin-bottom: 136px;
+        }
+    }
+
+    &__title {
+        width: 90%;
+        color: $white-color;
+    }
+
+    &__header {
+        button {
+            margin-top: 56px;
+        }
+    }
+
+    &__slide {
+        position: relative;
+
+        h3 {
+            color: $white-color;
+            margin-bottom: 32px;
+        }
+
+        p {
+            color: $light-color;
+            width: 80%;
+        }
+    }
+
+    &__line {
+        &::after {
+            content: "";
+            position: absolute;
+            width: 80%;
+            height: 1px;
+            background-color: $gray-color;
+            margin-top: 67px;
+        }
+    }
+
+    &__number {
+        span {
+            &:nth-child(1) {
+                font-size: 186px;
+                line-height: 100%;
+                font-weight: 700;
+                margin-bottom: 16px;
+                color: $white-color;
+                transition: all 0.3s ease-out; 
+            }
+
+            &:nth-child(2) {
+                font-size: 64px;
+                font-weight: 500;
+                color: $primary-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@mixin flex-row-c-sb {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-column-c-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-row-c-c {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column-s-c {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+@mixin flex-column-s-sb {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+@mixin link-style {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3%;
+    color: $white-color;
+}
+
+@mixin image-bg($url, $size: cover) {
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: $size;
+}

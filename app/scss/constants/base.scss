@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Value Sans Pro';
+    overflow: hidden;
+}
+
+section {
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: 2%;
+    line-height: 96px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 3%;
+}
+
+h3 {
+    font-size: 40px;
+    letter-spacing: 3%;
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 3%;
+    color: $light-color;
+}
+
+.description-small {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 3%;
+}
+
+button {
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 50px;
+    background: none;
+    cursor: pointer;
+    letter-spacing: 6%;
+    padding: 16px 32px;
+}
+
+.form-item {
+    padding: 16px;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid $black-color;
+
+    &::placeholder {
+        color: $gray-color;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+.button-white {
+    color: $white-color;
+    background-color: #ffffff00;
+    transition: background-color ease-in-out .2s;
+    border: 1px solid $white-color;
+}
+
+.button-white:hover {
+    background-color: #ffffff20;
+    transition: background-color ease-in-out .2s;
+}
+
+
+.title-block > h2::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 5px;
+    background-color: $primary-color;
+    margin-bottom: 40px;
+}

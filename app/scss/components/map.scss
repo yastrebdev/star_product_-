@@ -1,0 +1,65 @@
+.map {
+    background-color: #000000;
+
+    &__wrapper {
+        height: 100%;
+        @include image-bg('../images/map.webp', contain);
+    
+        padding: 112px 0;
+    
+        @include flex-column-s-sb;
+    }
+
+    &__header {
+        color: $white-color;
+        display: flex;
+
+        p {
+            max-width: 690px;
+            margin-top: 45px;
+            color: $light-color;
+        }
+    }
+
+    &__title {
+        margin-right: 118px;
+
+        h2 {
+            max-width: 592px;
+        }
+    }
+
+    &__stats {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 81px;
+        column-gap: 20px;
+
+        &_item {
+            position: relative;
+
+            &:nth-child(-n+4)::before {
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: $gray-color;
+                position: absolute;
+                bottom: -40px;
+            }
+
+            h4 {
+                color: $primary-color;
+                margin-bottom: 16px;
+            }
+
+            span {
+                color: $white-color;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: normal;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.slider {
+    width: 100%;
+
+    &__wrapper {
+        overflow: hidden;
+        width: inherit;
+    }
+
+    &__track {
+        display: flex;
+        width: inherit;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &__slide {
+        min-width: 100%;
+    }
+
+    &__navigation {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        bottom: 56px;
+        gap: 32px;
+    }
+
+    &__btn {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 1px solid $gray-light-color;
+        @include flex-row-c-c;
+        cursor: pointer;
+        background: #ffffff00;
+        transition: all ease-in-out .3s;
+
+        &:hover {
+            background: #ffffff20;
+            transition: all ease-in-out .3s;
+        }
+    }
+
+    &__btn-next {
+        transform: rotate(180deg);
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__pagination-item {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $gray-color;
+        cursor: pointer;
+        transition: all ease-in-out .3s;
+
+        &:hover {
+            background-color: $primary-color;
+            transition: all ease-in-out .3s;
+        }
+    }
+
+    &__pagination-item.active {
+        width: 18px;
+        height: 18px;
+        background-color: $primary-color;
+        transition: all ease-in-out .3s;
+    }
+}

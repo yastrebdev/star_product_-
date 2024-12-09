@@ -1,0 +1,33 @@
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    &__wrapper {
+        @include flex-row-c-sb;
+        padding-top: 32px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+
+        a {
+            @include link-style;
+
+            &:hover {
+                color: $gray-light-color;
+                transition: color ease-in-out .2s;
+            }
+
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+        }
+    }
+
+    button {
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+}
